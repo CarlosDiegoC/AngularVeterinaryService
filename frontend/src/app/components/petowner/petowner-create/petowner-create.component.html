@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-title> New Pet Owner</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Name" [(ngModel)]="petOwner.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="CPF" [(ngModel)]="petOwner.cpf" name="cpf">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Email" [(ngModel)]="petOwner.email" name="email">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Password" [(ngModel)]="petOwner.password" name="password">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Phone" [(ngModel)]="petOwner.phone" name="phone">
+        </mat-form-field>
+    </form>    
+</mat-card>
+
+<button mat-raised-button (click)="createProduct()" color="primary">Save</button>
+<button mat-raised-button (click)="cancel()" color="warning">Cancel</button>

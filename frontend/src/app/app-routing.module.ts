@@ -1,17 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { PetownerCreateComponent } from './components/petowner/petowner-create/petowner-create.component';
 import './views/home/home.component';
 import { HomeComponent } from './views/home/home.component';
-import './views/pet-crud/pet-crud.component'
-import { PetCrudComponent } from './views/pet-crud/pet-crud.component';
+import { PetownerCrudComponent } from './views/petowner-crud/petowner-crud.component';
 
 const routes: Routes = [{
   path: "",
   component: HomeComponent
 },
 {
-  path: "pets",
-  component: PetCrudComponent
+  path: "petowners",
+  component: PetownerCrudComponent
+},
+{
+  path: "petowners/create",
+  component: PetownerCreateComponent
 }];
 
 @NgModule({
