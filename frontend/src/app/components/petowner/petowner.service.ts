@@ -28,4 +28,14 @@ export class PetownerService {
   read(): Observable<PetOwner[]> {
     return this.http.get<PetOwner[]>(apiUrl)
   }
+
+  readById(id: string): Observable<PetOwner>{
+    const url = `${apiUrl}/${id}`
+    return this.http.get<PetOwner>(url)
+  }
+
+  update(petOwner: PetOwner): Observable<PetOwner>{
+    const url = `${apiUrl}/${petOwner.id}`
+    return this.http.put<PetOwner>(url, petOwner)
+  }
 }

@@ -9,23 +9,24 @@ import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
+import { PetownerCrudComponent } from './views/petowner-crud/petowner-crud.component';
+import { PetownerCreateComponent } from './components/petowner/petowner-create/petowner-create.component';
+import { PetownerReadComponent } from './components/petowner/petowner-read/petowner-read.component';
 
+import { FormsModule } from '@angular/forms';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-
-import { PetownerCreateComponent } from './components/petowner/petowner-create/petowner-create.component';
-import { PetownerCrudComponent } from './views/petowner-crud/petowner-crud.component';
-import { PetownerReadComponent } from './components/petowner/petowner-read/petowner-read.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { PetownerUpdateComponent } from './components/petowner/petowner-update/petowner-update.component';
+
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { MatSortModule } from '@angular/material/sort';
     PetownerCreateComponent,
     PetownerCrudComponent,
     PetownerReadComponent,
-    PetownerReadComponent
+    PetownerReadComponent,
+    PetownerUpdateComponent
   ],
   imports: [
     BrowserModule,

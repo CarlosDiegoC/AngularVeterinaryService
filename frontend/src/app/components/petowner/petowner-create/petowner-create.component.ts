@@ -26,10 +26,10 @@ export class PetownerCreateComponent implements OnInit {
   }
 
   createProduct(): void {
-    this.petOwnerService.create(this.petOwner).subscribe(() => { 
-      this.petOwnerService.showMessage('Pet owner created!') 
-      this.router.navigate(['/petowners']) 
-    })
+    this.petOwnerService.create(this.petOwner).subscribe(() => {
+      this.petOwnerService.showMessage('Pet owner created!')
+      this.router.navigate(['/petowners'])
+    });
   }
 
   cancel(): void {
